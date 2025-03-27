@@ -1,0 +1,14 @@
+{
+  "name": "openweathermap-api-project",
+  "version": "1.0.0",
+  "description": "A project to consume APIs from OpenWeatherMap.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

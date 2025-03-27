@@ -1,64 +1,59 @@
 # Calculator Project
 
-This is a simple calculator application that supports various mathematical operations including addition, subtraction, multiplication, and division. The project is designed to be user-friendly and allows for interactive input.
-
-## Features
-
-- **Addition**: Adds two numbers.
-- **Subtraction**: Subtracts one number from another.
-- **Multiplication**: Multiplies two numbers.
-- **Division**: Divides one number by another with error handling for division by zero.
+This is a simple calculator project implemented in JavaScript. It provides basic arithmetic operations including addition, subtraction, multiplication, and division.
 
 ## Project Structure
 
 ```
 calculator-project
 ├── src
-│   ├── calculator.py          # Main entry point for user interaction
-│   ├── operations             # Contains operation modules
-│   │   ├── addition.py        # Addition operation
-│   │   ├── subtraction.py     # Subtraction operation
-│   │   ├── multiplication.py   # Multiplication operation
-│   │   ├── division.py        # Division operation
-│   │   └── __init__.py       # Initializes operations module
-│   └── utils                  # Contains utility functions
-│       └── input_handler.py   # Handles user input
-├── tests                      # Contains unit tests for operations
-│   ├── test_addition.py       # Tests for addition
-│   ├── test_subtraction.py    # Tests for subtraction
-│   ├── test_multiplication.py  # Tests for multiplication
-│   ├── test_division.py       # Tests for division
-│   └── __init__.py           # Initializes tests module
-├── requirements.txt           # Lists project dependencies
-└── README.md                  # Project documentation
+│   ├── calculator.js
+│   └── index.js
+├── package.json
+└── README.md
 ```
 
 ## Installation
 
-To install the required dependencies, run:
-
-```
-pip install -r requirements.txt
-```
+To run this project, you need to have Node.js installed on your machine. You can download it from [nodejs.org](https://nodejs.org/).
 
 ## Usage
 
-To run the calculator, execute the following command:
+1. Clone the repository or download the project files.
+2. Navigate to the project directory.
+3. Install the dependencies by running the following command:
 
+   ```
+   npm install
+   ```
+
+4. Run the calculator by executing the following command:
+
+   ```
+   node src/index.js
+   ```
+
+## Functions
+
+The calculator supports the following operations:
+
+- **Addition**: `add(a, b)`
+- **Subtraction**: `subtract(a, b)`
+- **Multiplication**: `multiply(a, b)`
+- **Division**: `divide(a, b)`
+
+## Examples
+
+```javascript
+// Example usage
+const { add, subtract, multiply, divide } = require('./calculator');
+
+const result1 = add(5, 3);        // Returns 8
+const result2 = subtract(10, 4);  // Returns 6
+const result3 = multiply(2, 3);   // Returns 6
+const result4 = divide(8, 2);     // Returns 4
 ```
-python src/calculator.py
-```
 
-Follow the prompts to perform calculations.
+## License
 
-## Testing
-
-To run the tests, use the following command:
-
-```
-pytest tests/
-```
-
-## Contributing
-
-Feel free to submit issues or pull requests for improvements or bug fixes.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
